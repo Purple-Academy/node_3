@@ -33,11 +33,11 @@ mockRouter.get("/", async (req, res) => {
     });
 
     fs.writeFileSync(
-      "/Users/datokhojava/Projects/node_3/public/database.json",
+      "/Users/datokhojava/Projects/node_3/public/top250.json",
       JSON.stringify(staticDB)
     );
 
-    res.send("created mock");
+    res.send("Mocks are created");
   } catch (error) {
     console.log("Something went wrong", error);
   }
